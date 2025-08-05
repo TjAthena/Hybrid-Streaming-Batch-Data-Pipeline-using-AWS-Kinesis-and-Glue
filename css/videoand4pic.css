@@ -1,0 +1,217 @@
+/* General body styling */
+
+@font-face {
+    font-family: 'gt_super_displaylight';
+    src: url('/fonts/GT-Super-Display-Light-Trial.otf') format('truetype'); /* Adjust to your actual file name */
+    font-weight: 300; /* Adjust the weight as needed */
+    font-style: normal; /* Adjust if your font has a style */
+}
+/* Container for all elements */
+.container-vdp {
+    position: relative;
+    left: 21%;
+    text-align: center;
+    width: 900px;
+    height: 700px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+/* Styling for H3 heading */
+.h1-vdp {
+    margin-bottom: 10px;
+    font-family: 'gt_super_displaylight', serif;
+    color: #0b0b0b;
+    padding-bottom: 10px;
+}
+
+/* Styling for paragraph */
+.p-vdp {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #182333;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
+}
+
+/* Video container */
+.video-container1 {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+/* Styling the video with curved corners */
+.video-container1 video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Add rounded corners to the video */
+}
+
+/* Images container with flexbox */
+.images-container1 {
+    width: 900;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+/* Styling for images with animation */
+.images-container1 img {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+/* Delays for fade-in effect on individual images */
+.images-container1 img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.images-container1 img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.images-container1 img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Keyframes for the fade-in down animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+.pdt-container {
+    display: flex;
+  }
+  
+  .pdt-left-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .pdt-slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .pdt-slide.active {
+    display: block;
+  }
+  
+  .pdt-right-column {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pdt-display-image {
+    display: none;
+    position: relative;
+    top: 50px;
+    width: 370px;
+    height: 480px;
+  }
+  
+  .pdt-display-image.active {
+    display: block;
+  }
+  
+  /* Navigation Icons */
+  .pdt-nav-icons {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pdt-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .pdt-nav-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+
+
+/* For devices with a max width of 768px (tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
+    .container-vdp {
+        width: 90%; /* Full width for mobile */
+        left: 5%; /* Centered positioning */
+        padding: 20px;
+        height: auto; /* Adjusts height to content */
+        margin-bottom: 30px;
+    }
+
+    .h1-vdp {
+        font-size: 24px; /* Smaller font size for headings */
+        padding-bottom: 5px;
+    }
+
+    .p-vdp {
+        font-size: 14px; /* Smaller font size for paragraphs */
+        padding-bottom: 10px;
+    }
+
+    .video-container1 {
+        width: 100%;
+        height: auto; /* Adjust height to fit content */
+        margin-bottom: 20px;
+        border-radius: 15px; /* Slightly smaller radius for mobile */
+    }
+
+    .images-container1 {
+        width: 100%; /* Full width on mobile */
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
+    .images-container1 img {
+        width: 100%; /* Full width for images */
+        max-width: 250px; /* Limit max width */
+        margin-bottom: 20px; /* Space between images */
+    }
+}
+
+/* For very small screens, max width of 480px (small mobile devices) */
+@media only screen and (max-width: 480px) {
+    .h1-vdp {
+        font-size: 30px;
+         /* Further reduce font size for very small screens */
+    }
+
+    .p-vdp {
+        font-size: 15px;
+    }
+
+    .images-container1 img {
+        max-width: 200px; /* Further reduce max width */
+    }
+}
+

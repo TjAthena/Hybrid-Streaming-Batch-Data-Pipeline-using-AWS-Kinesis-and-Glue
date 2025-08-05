@@ -1,0 +1,296 @@
+
+.image-container-tj2 {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh; /* Adjust based on your image dimensions */
+    background:  url(../img/why_peanut.png) center center no-repeat;
+    background-size: cover; /* Prevents image repetition */
+}
+.text-overlay-tj {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center;
+    color: #fff; /* White text for better contrast */
+}
+
+.heading3-tj {
+    color: #D1292A;
+    position: relative;
+    font-size: 130px;
+    bottom: 150px;
+    margin-bottom: 10px;
+    font-family: serif;
+    -webkit-text-stroke: 3px white;
+    font-weight: bold;
+}
+.heading3-tj2 {
+    color: #D1292A;
+    position: relative;
+    font-size: 110px;
+    bottom: 150px;
+    margin-bottom: 10px;
+    font-family: serif;
+    -webkit-text-stroke: 3px white;
+    font-weight: bold;
+}
+.heading4-tj {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+.heading4-tj1 {
+
+    position: relative;
+    bottom: 100px;
+    color: #000000;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: serif;
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+}
+
+.paragraph-tj {
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 350px;
+    bottom: 130px;
+    left: 50px;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-family: serif;  
+}
+.paragraph-tj2 {
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 350px;
+    bottom: 130px;
+    left: 25px;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-family: serif;  
+}
+.paragraph-tj::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.626); /* Slightly less transparent white for background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 245, 245, 0.1); /* Shadow around the background */
+    filter: blur(20px);
+    z-index: -2;
+}
+.products-tj {
+    position: relative;
+    display: inline-block; 
+    bottom: 60px;/* Allows padding and margin to apply correctly */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: darkred; /* Fill color of the button */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the link */
+    border: 3px solid white; /* White border around the button */
+    border-radius: 20px; /* Optional: rounded corners */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Optional: Add hover effect */
+.products-tj:hover {
+    background-color: rgb(42, 2, 2); /* Darker shade on hover */
+    color: #fff; /* Keep text color white on hover */
+}
+
+.env-btn {
+    position: relative;
+    display: inline-block; 
+    bottom: -30px;/* Allows padding and margin to apply correctly */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: red; /* Fill color of the button */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the link */
+    border: 3px solid white; /* White border around the button */
+    border-radius: 20px; /* Optional: rounded corners */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Optional: Add hover effect */
+.env-btn {
+    background-color: darkred; /* Darker shade on hover */
+    color: #fff; /* Keep text color white on hover */
+}
+
+.container-lg {
+    width: 500px;
+    text-align: center;
+}
+
+/* Style for the H1 title */
+.title-lg {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Background area for images */
+.row-ft {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensures all columns stay in a single row */
+    margin-bottom: 30px;
+}
+
+.col-ft {
+    flex: 1;
+    max-width: 25%;
+}
+
+.text-white-ft {
+    color: #ffffff;
+}
+
+.mb-4-ft {
+    margin-bottom: 16px;
+}
+
+.text-light-ft {
+    color: #f8f9fa;
+}
+
+.btn-ft {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-link-ft {
+    display: block;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+.btn-link-ft:hover {
+    color: #D1292A;
+    font-size: 17px;
+}
+
+.btn-square-ft {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline-primary-ft {
+    border: 1px solid #D1292A;
+    color: #D1292A;
+    border-radius: 50%;
+}
+
+.btn-outline-primary-ft:hover {
+    background-color: #D1292A;
+    color: #ffffff;
+}
+
+.qr-code-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.qr-code-ft img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/* For devices with a max width of 768px (tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
+    .image-container-tj2 {
+        padding-top: 50px; /* Reduced padding for smaller screens */
+        height: 60vh;      /* Adjusted height to fit mobile layout */
+        background-size: cover;
+    }
+
+    .text-overlay-tj {
+        padding: 0 10px; /* Add some horizontal padding */
+    }
+
+    .heading3-tj, .heading3-tj2 {
+        font-size: 50px;  /* Reduced font size */
+        bottom: 100px;     /* Adjusted positioning */
+        -webkit-text-stroke: 2px white;
+    }
+
+    .heading4-tj1 {
+        font-size: 30px;
+        bottom: 60px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .paragraph-tj, .paragraph-tj2 {
+        width: 90%;       /* Full width on mobile */
+        font-size: 18px;  /* Smaller text size */
+        left: 0;
+        padding: 5px;
+    }
+
+    .products-tj, .env-btn {
+        padding: 8px 15px;  /* Smaller button padding */
+        font-size: 16px;    /* Smaller font size for buttons */
+        border-radius: 15px;
+        bottom: 40px;       /* Adjusted positioning */
+    }
+}
+
+/* For very small screens, max width of 480px (small mobile devices) */
+@media only screen and (max-width: 480px) {
+    .heading3-tj, .heading3-tj2 {
+        font-size: 80px;  /* Further reduce font size */
+        bottom: 190px;
+    }
+
+    .heading4-tj1 {
+        font-size: 40px;
+        bottom: 180px;
+    }
+
+    .paragraph-tj, .paragraph-tj2 {
+        left: 20px;
+        font-size: 18px;
+        bottom: 180px;
+        padding: 0;
+    }
+
+    .products-tj{
+        padding: 6px 10px;
+        left: 10px;
+        bottom: 120px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+    .env-btn {
+        padding: 6px 10px;
+        top: 20%;
+        left: 35%;
+        bottom: 120px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+}
