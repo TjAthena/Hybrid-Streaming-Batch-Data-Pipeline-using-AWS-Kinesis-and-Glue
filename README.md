@@ -1,12 +1,24 @@
-# Kinesis Glue Streaming
+# Hybrid Streaming-Batch Data Pipeline using AWS Kinesis and Glue
 
-This is a spark streaming program that is constantly running which can handle small user-requested custom jobs (working with 4-5 records that can be completed in 5-10 sec) during the day and it can handle batch jobs at night (working with Million records that get completed under an hour)
+A scalable hybrid data pipeline solution that combines real-time streaming and batch processing capabilities using AWS Kinesis and AWS Glue. This system efficiently handles both:
+- **Real-time Processing**: Small user-requested jobs (4-5 records) with 5-10 second completion time
+- **Batch Processing**: Large-scale operations (millions of records) processed during off-peak hours
 
-So having a queue can help. Kinesis can act as a queue where the consumer would be this spark streaming program that gets the command for kinesis and runs it without any delay such as start-up time or other overhead and would be constantly watching the kinesis to pick up the work
+## Overview
 
-In this exercise, I have a simple command that copies data from one s3 bucket to another bucket as a command
+This project implements a flexible data processing architecture that uses:
+- **AWS Kinesis**: Acts as a managed queue system for incoming data processing commands
+- **AWS Glue**: Runs a continuous Spark streaming job that processes both real-time and batch workloads
+- **AWS S3**: Serves as the source and destination for data operations
 
-Here the two S3 paths would be passed in as a payload in a Kinesis Data Stream and get picked up by the streaming glue job and the paths get passed in as params in the glue job to run it
+## Features
+
+- **Hybrid Processing**: Seamlessly handles both streaming and batch workloads
+- **Zero Start-up Overhead**: Continuous running job eliminates cold start delays
+- **Scalable Architecture**: Automatically scales with AWS Kinesis and Glue
+- **File Format Support**: Handles various file formats through dynamic file type detection
+- **Simple Command Interface**: Uses AWS CLI for job submission
+- **Infrastructure as Code**: Complete AWS CloudFormation template for infrastructure setup
 
 ## Output
 ![alt text](info/output.gif)
